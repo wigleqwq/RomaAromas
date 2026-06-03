@@ -1,0 +1,147 @@
+<footer>
+  <div class="footer-container">
+    <!-- Columna Izquierda -->
+    <div class="footer-left">
+      <div class="footer-section">
+        <h3>MÉTODOS DE PAGO</h3>
+        <div class="methods-grid">
+          <img src="/images/mercado-pago.webp" title="Mercado Pago" alt="Mercado Pago" />
+          <img src="/images/mastercard.webp" title="Mastercard" alt="Mastercard" />
+          <img src="/images/visa.webp" title="Visa" alt="Visa" />
+          <img src="/images/efectivo.webp" title="Efectivo" alt="Efectivo" />
+          <img src="/images/transferencia.webp" title="Transferencia Bancaria" alt="Transferencia Bancaria" />
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>MEDIOS DE ENVÍO</h3>
+        <div class="methods-grid">
+          <img src="/images/correo-argentino.webp" alt="Correo Argentino" title="Correo Argentino" />
+          <img src="/images/transporte.webp" alt="Transporte" title="Envio particular" />
+          <img src="/images/receptor.webp" alt="Receptor" title="Punto de encuentro" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna Derecha -->
+    <div class="footer-right">
+      <div class="footer-section">
+        <h3>REDES SOCIALES</h3>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/aromass.deroma/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>CONTACTOS</h3>
+        <ul class="contact-info">
+          <li><i class="fa-regular fa-envelope"></i> aromass.deroma@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i> +54 9 11 5898-2997</li>
+          <li><i class="fa-solid fa-location-dot"></i> Tortuguitas, Buenos Aires</li>
+          <li>
+            <a href="https://wa.me/5491158982997" target="_blank" class="whatsapp-btn">
+              <i class="fa-brands fa-whatsapp"></i> Contáctanos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    border-top: 1px solid #dbd3ca;
+    padding: 3rem 2rem;
+    background-color: #f5ede3;
+    color: #4a4a4a;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+    gap: 2rem;
+  }
+  .footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-right {
+    text-align: right;
+  }
+  .footer-section h3 {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #4a4a4a;
+  }
+  .methods-grid {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    cursor: pointer
+  }
+  .methods-grid img {
+    width: 50px;
+    height: 26px;
+    object-fit: contain; 
+    background-color: #ffffff; 
+    border-radius: 4px;
+  }
+  .social-icons {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: flex-end;
+  }
+  .social-icons a {
+    color: #4a4a4a;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: #d4a373;
+  }
+  .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-end; 
+  }
+  .contact-info li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+  }
+  .whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #25D366; 
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+  }
+  .whatsapp-btn:hover {
+    background-color: #128C7E; 
+  }
+  .whatsapp-btn i {
+    font-size: 1.2rem;
+  }
+</style>

@@ -1,0 +1,171 @@
+---
+// Puedes importar scripts o definir lógica de productos aquí en el futuro
+---
+
+<section class="collection-section">
+  <h2 class="collection-title">Colección del Mundial</h2>
+  <h3 class="collection-subtitle">UNA VELA PARA ACOMPAÑAR A LA SELECCIÓN EN CADA PARTIDO</h3>
+  
+  <div class="product-grid">
+    <article class="product-card">
+      <div class="image-wrapper">
+        <span class="badge">Edición Limitada</span>
+        <img src="/images/velas/vela-mundial-1.webp" alt="Producto de colección 1" />
+      </div>
+      <div class="product-details">
+        <h3 class="product-name">Vela Aromática</h3>
+        <p class="product-price">$ 15.000</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="image-wrapper">
+        <span class="badge">Edición Limitada</span>
+        <img src="/images/velas/vela-mundial-2.webp" alt="Producto de colección 2" />
+      </div>
+      <div class="product-details">
+        <h3 class="product-name">Vela Aromática</h3>
+        <p class="product-price">$ 18.500</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="image-wrapper">
+        <span class="badge">Edición Limitada</span>
+        <img src="/images/velas/vela-mundial-3.webp" alt="Producto de colección 3" />
+      </div>
+      <div class="product-details">
+        <h3 class="product-name">Vela Aromática</h3>
+        <p class="product-price">$ 12.000</p>
+        <button class="add-to-cart">Agregar al carrito</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+  .collection-section {
+    margin: 3rem auto;
+    /* Cambiado para ocupar toda la pantalla con algo de margen a los lados */
+    max-width: 100%;
+    padding: 0 4rem; 
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .collection-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #576076;
+  }
+  .collection-subtitle {
+    font-size: 15px;
+    color: #576076;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-weight: 350;
+    letter-spacing: 0.3rem;
+  }
+  .product-grid {
+    display: flex;
+    justify-content: space-between; /* Distribuye las tarjetas a lo ancho */
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .product-card {
+    /* Las tarjetas ahora son flexibles para llenar todo el espacio */
+    flex: 1;
+    min-width: 320px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Centramos el texto como en el diseño de referencia */
+  }
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f5ede3;
+  }
+  .image-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; 
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+    pointer-events: none; 
+    z-index: 5;
+  }
+  .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    z-index: 10;
+  }
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    transition: transform 0.4s ease;
+  }
+  .product-card:hover .image-wrapper img {
+    transform: scale(1.05);
+  }
+  .product-details {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #202020;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .product-price {
+    font-size: 1.1rem;
+    color: #606060;
+    margin: 0.8rem 0 1.5rem 0;
+    text-align: center;
+  }
+  .add-to-cart {
+    background-color: transparent;
+    color: #4a4a4a;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    width: 100%;
+    max-width: 250px;
+  }
+  .add-to-cart:hover {
+    background-color: #709fc2;
+    border-color: #a3b2be;
+  }
+</style>
