@@ -1,0 +1,24 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Aromas de Roma - Velas, Jabones y algo más</title>
+    <script src="https://kit.fontawesome.com/716a60bd1a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/aromas-de-roma-logo.ico" type="image/x-icon">
+  </head>
+
+  <body style="margin: 0; font-family: system-ui, sans-serif;">
+    <Header />
+
+    <main style="min-height: 70vh; padding: 2rem;">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+
+</html>
